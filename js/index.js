@@ -1,3 +1,11 @@
+
+
+
+
+
+
+/*
+
 const input = document.getElementById("password");
 const button = document.getElementById("accept");
 
@@ -15,3 +23,5 @@ button.addEventListener("click", () => {
     alert("Пароль зарегистрирован")
 
 })
+
+*/
