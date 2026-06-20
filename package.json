@@ -1,9 +1,24 @@
 {
-  "devDependencies": {
-    "electron": "^42.4.1"
-  },
+  "name": "CRS",
+  "version": "1.0.0",
+  "description": "My Electron App",
+  "author": "LiMbi",
   "main": "main.js",
+
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+
+  "devDependencies": {
+    "electron": "^42.4.1",
+    "electron-builder": "^26.15.3"
+  },
+
+  "build": {
+    "appId": "com.limbi.app",
+    "win": {
+      "target": "nsis"
+    }
   }
 }
