@@ -40,7 +40,6 @@ ipcMain.on("close-window", () => {
 });
 
 ipcMain.on("toggle-window", () => {
-    // Если сейчас F11 fullscreen
     if (win.isFullScreen()) {
         win.setFullScreen(false);
 
@@ -49,11 +48,8 @@ ipcMain.on("toggle-window", () => {
                 win.unmaximize();
             }
         }, 50);
-
         return;
     }
-
-    // Обычное переключение maximize/unmaximize
     if (win.isMaximized()) {
         win.unmaximize();
     } else {
